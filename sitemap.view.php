@@ -2,16 +2,15 @@
 /* Copyright (C) Xvezda <http://xvezda.blog.me> */
 
 /**
- * @class  SitemapModel
+ * @class  SitemapView
  * @author Xvezda (xvezda@naver.com)
- * @brief  Sitemap module of the Model class.
+ * @brief  Sitemap module of the View class.
  */
 
 class sitemapView extends sitemap
 {
 	/**
-	 * get the configuration
-	 * @return object config of sitemap module
+	 * sitemap output
 	 **/
 	function sitemap()
 	{
@@ -48,5 +47,5 @@ class sitemapView extends sitemap
 	}
 }
 
-/* End of file sitemap.model.php */
-/* Location: ./modules/sitemap/sitemap.model.php */
+/* End of file sitemap.view.php */
+/* Location: ./modules/sitemap/sitemap.view.php */
