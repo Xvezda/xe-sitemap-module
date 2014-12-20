@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<grants />
+	<permissions />
+	<actions>
+		<action name="dispSitemapAdminIndex" type="view" menu_name="sitemap" menu_index="true" admin_index="true" />
+		<action name="procSitemapAdminInsertConfig" type="controller" />
+		<action name="procSitemapAdminPingSitemap" type="controller" />
+		<action name="procSitemapAdminDownloadSitemap" type="controller" />
+		<action name="sitemap" type="view" />
+	</actions>
+	<menus>
+		<menu name="sitemap" type="all">
+			<title xml:lang="ko">사이트맵</title>
+			<title xml:lang="jp">サイトマップ</title>
+			<title xml:lang="en">Sitemap</title>
+		</menu>
+	</menus>
+</module>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lang>
+	<item name="sitemap">
+		<value xml:lang="ko"><![CDATA[사이트맵]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップ]]></value>
+		<value xml:lang="en"><![CDATA[Sitemap]]></value>
+	</item>
+	<item name="search_index">
+		<value xml:lang="ko"><![CDATA[검색 색인]]></value>
+		<value xml:lang="jp"><![CDATA[検索インデックス]]></value>
+		<value xml:lang="en"><![CDATA[Search index]]></value>
+	</item>
+	<item name="except_module">
+		<value xml:lang="ko"><![CDATA[제외 모듈]]></value>
+		<value xml:lang="jp"><![CDATA[除外モジュール]]></value>
+		<value xml:lang="en"><![CDATA[Except module]]></value>
+	</item>
+	<item name="sitemap_document_count">
+		<value xml:lang="ko"><![CDATA[사이트맵 글 수]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップ投稿することができ]]></value>
+		<value xml:lang="en"><![CDATA[Sitemap document count]]></value>
+	</item>
+	<item name="about_sitemap_document_count">
+		<value xml:lang="ko"><![CDATA[사이트맵에 출력할 글의 수를 선택합니다.]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップに出力するスレッドの数を選択します。]]></value>
+		<value xml:lang="en"><![CDATA[Choose the number of threads to be output to the sitemap.]]></value>
+	</item>
+	<item name="send_ping">
+		<value xml:lang="ko"><![CDATA[핑 보내기]]></value>
+		<value xml:lang="jp"><![CDATA[pingの送信]]></value>
+		<value xml:lang="en"><![CDATA[Send ping]]></value>
+	</item>
+	<item name="about_sitemap_submit">
+		<value xml:lang="ko"><![CDATA[핑을 보내서 사이트맵을 제출합니다.]]></value>
+		<value xml:lang="jp"><![CDATA[ピングを送ってサイトマップを送信します。]]></value>
+		<value xml:lang="en"><![CDATA[Send ping to submit sitemap.]]></value>
+	</item>
+	<item name="download">
+		<value xml:lang="ko"><![CDATA[다운로드]]></value>
+		<value xml:lang="jp"><![CDATA[ダウンロード]]></value>
+		<value xml:lang="en"><![CDATA[Download]]></value>
+	</item>
+	<item name="about_sitemap_download">
+		<value xml:lang="ko"><![CDATA[사이트맵을 텍스트 파일로 다운로드 합니다.]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップをテキストファイルとしてダウンロードします。]]></value>
+		<value xml:lang="en"><![CDATA[Download sitemap as text file.]]></value>
+	</item>
+	<item name="except_deleted">
+		<value xml:lang="ko"><![CDATA[삭제글 제외]]></value>
+		<value xml:lang="jp"><![CDATA[削除されたスレッドを除く]]></value>
+		<value xml:lang="en"><![CDATA[Except deleted document]]></value>
+	</item>
+	<item name="except_secret">
+		<value xml:lang="ko"><![CDATA[비밀글 제외]]></value>
+		<value xml:lang="jp"><![CDATA[秘密スレッドを除く]]></value>
+		<value xml:lang="en"><![CDATA[Except secret document]]></value>
+	</item>
+	<item name="except_admin">
+		<value xml:lang="ko"><![CDATA[관리자 페이지 제외]]></value>
+		<value xml:lang="jp"><![CDATA[管理者ページの除外]]></value>
+		<value xml:lang="en"><![CDATA[Except admin pages]]></value>
+	</item>
+	<item name="metatag">
+		<value xml:lang="ko"><![CDATA[메타태그]]></value>
+		<value xml:lang="jp"><![CDATA[管理者ページの除外]]></value>
+		<value xml:lang="en"><![CDATA[Except admin pages]]></value>
+	</item>
+</lang>

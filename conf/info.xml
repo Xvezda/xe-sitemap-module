@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.2">
+	<title xml:lang="ko">사이트맵</title>
+	<title xml:lang="jp">サイトマップ</title>
+	<title xml:lang="en">Sitemap</title>
+	<description xml:lang="ko">사이트맵 생성과 검색 색인을 관리합니다.</description>
+	<description xml:lang="jp">サイトマップの作成と検索インデックスを管理します。</description>
+	<description xml:lang="en">Manage the creation of sitemap and searching index.</description>
+	<version>1.0</version>
+	<date>2014-11-21</date>
+	<author email_address="xvezda@naver.com" link="http://xvezda.blog.me">
+		<name xml:lang="ko">즈베즈다</name>
+		<name xml:lang="jp">ズベズダ</name>
+		<name xml:lang="en">Xvezda</name>
+	</author>
+</module>

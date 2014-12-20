@@ -1,0 +1,122 @@
+<load target="css/sitemap.css" />
+<load target="js/sitemap.js" />
+<load target="../../module/tpl/js/module_list.js" />
+
+<div class="x_page-header">
+	<h1>{$lang->sitemap}</h1>
+</div>
+
+<div cond="$XE_VALIDATOR_MESSAGE && $XE_VALIDATOR_ID == 'modules/sitemap/tpl/index/1'" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+<form action="./" method="post" class="x_form-horizontal" style="margin-top:0">
+	<input type="hidden" name="act" value="procSitemapAdminInsertConfig" />
+	<input type="hidden" name="module" value="admin" />
+	<input type="hidden" name="xe_validator_id" value="modules/sitemap/tpl/index/1" />
+
+	<section class="section">
+		<h1>{$lang->sitemap} {$lang->cmd_setup}</h1>
+		<div class="x_control-group">
+			<div class="x_control-label">{$lang->url}</div>
+			<div class="x_controls">
+				<p style="padding-top:5px">
+					<a href="{getFullUrl('', 'module', 'sitemap', 'act', 'sitemap')}" target="_blank">{getFullUrl('', 'module', 'sitemap', 'act', 'sitemap')}</a>
+				</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->sitemap}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="use_sitemap" value="Y" id="use_sitemap_yes" checked="checked"|cond="!$sitemap_config->use_sitemap || $sitemap_config->use_sitemap == 'Y'" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="use_sitemap" value="N" id="use_sitemap_no" checked="checked"|cond="$sitemap_config->use_sitemap == 'N'" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->except_module}</label>
+			<div class="x_controls">
+				<input type="hidden" name="except_module_srl" id="except_module_srl" value="{$sitemap_config->except_module_srl}" />
+				<select class="modulelist_selected" size="8" multiple="multiple" style="display:block;vertical-align:top;margin:5px 0"></select>
+				<a href="#" id="__module_srl_list_except_module_srl" class="x_btn moduleTrigger" data-multiple="true">{$lang->cmd_add}</a>
+				<button type="button" class="x_btn modulelist_del">{$lang->cmd_delete}</button>
+				<script>
+				xe.registerApp(new xe.ModuleListManager('except_module_srl'));
+				</script>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label" for="sitemap_document_count">{$lang->sitemap_document_count}</label>
+			<div class="x_controls">
+				<input type="number" min="10" max="500" name="sitemap_document_count" value="{$sitemap_config->sitemap_document_count}" id="sitemap_document_count" />
+				<p class="x_help-inline">{$lang->about_sitemap_document_count}</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<div class="x_control-label">{$lang->send_ping}</div>
+			<div class="x_controls">
+				<a href="#ping" class="x_btn x_btn-success">{$lang->sitemap} {$lang->cmd_submit}</a>
+				<p class="x_help-inline">{$lang->about_sitemap_submit}</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<div class="x_control-label">{$lang->download}</div>
+			<div class="x_controls">
+				<a href="{getUrl('', 'module', 'admin', 'act', 'procSitemapAdminDownloadSitemap')}" class="x_btn x_btn-warning">{$lang->download}</a>
+				<p class="x_help-inline">{$lang->about_sitemap_download}</p>
+			</div>
+		</div>
+		<div class="btnArea">
+			<button class="x_btn x_btn-primary" type="submit">{$lang->cmd_registration}</button>
+		</div>
+	</section>
+	<section class="section">
+		<h1>{$lang->search_index} {$lang->cmd_management}</h1>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->except_deleted}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="except_deleted" value="Y" id="except_deleted_yes" checked="checked"|cond="!$sitemap_config->except_deleted || $sitemap_config->except_deleted == 'Y'" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="except_deleted" value="N" id="except_deleted_no" checked="checked"|cond="$sitemap_config->except_deleted == 'N'" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->except_secret}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="except_secret" value="Y" id="except_secret_yes" checked="checked"|cond="!$sitemap_config->except_secret || $sitemap_config->except_secret == 'Y'" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="except_secret" value="N" id="except_secret_no" checked="checked"|cond="$sitemap_config->except_secret == 'N'" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->except_admin}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="except_admin" value="Y" id="except_admin_yes" checked="checked"|cond="!$sitemap_config->except_admin || $sitemap_config->except_admin == 'Y'" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="except_admin" value="N" id="except_admin_no" checked="checked"|cond="$sitemap_config->except_admin == 'N'" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label for="metatag" class="x_control-label">{$lang->metatag}</label>
+			<div class="x_controls">
+				<select name="metatag" id="metatag">
+					<option loop="$metatag_list => $val"  value="{$val}" selected="selected"|cond="$sitemap_config->metatag == $val">{$val}</option>
+				</select>
+			</div>
+		</div>
+		<div class="btnArea">
+			<button class="x_btn x_btn-primary" type="submit">{$lang->cmd_registration}</button>
+		</div>
+	</section>
+</form>
