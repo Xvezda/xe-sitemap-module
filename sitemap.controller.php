@@ -40,7 +40,7 @@ class sitemapController extends sitemap
 
 		if(Context::get('module') == 'admin' && $config->except_admin == 'Y')
 		{
-			$oSitemapModel->addRObotsMeta('none');
+			$oSitemapModel->addRobotsMeta('none');
 			return new Object();
 		}
 		$oSitemapModel->addRobotsMeta($config->metatag);
