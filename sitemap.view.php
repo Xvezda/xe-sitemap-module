@@ -29,7 +29,7 @@ class sitemapView extends sitemap
 
 		$result = executeQuery('sitemap.getDocumentSrlByStatus', $args);
 
-		Context::set('oDocumentSrl', $result->data);
+		Context::set('oDocument', $result->data);
 
 		// XML
 		Context::setResponseMethod('XMLRPC');

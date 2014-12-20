@@ -3,7 +3,7 @@
 	<url>
 		<loc>{getFullUrl('')}</loc>
 	</url>
-	<url loop="$oDocumentSrl=>$key,$val">
+	<url loop="$oDocument=>$key,$val">
 		<loc>{getFullUrl('', 'document_srl', $val->document_srl)}</loc>
 	</url>
 </urlset>
