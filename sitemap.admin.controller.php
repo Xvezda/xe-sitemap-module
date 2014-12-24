@@ -44,11 +44,11 @@ class sitemapAdminController extends sitemap
 	 */
 	function procSitemapAdminPingSitemap()
 	{
-		$ping_url = array();
-		$ping_url[] = 'http://www.google.com/webmasters/sitemaps/ping?sitemap=';
-		$ping_url[] = 'http://www.bing.com/ping?sitemap=';
+		$pingUrl = array();
+		$pingUrl[] = 'http://www.google.com/webmasters/sitemaps/ping?sitemap=';
+		$pingUrl[] = 'http://www.bing.com/ping?sitemap=';
 
-		foreach($ping_url as $url)
+		foreach($pingUrl as $url)
 		{
 			FileHandler::getRemoteResource($url.getFullUrl('', 'module', 'sitemap', 'act', 'sitemap'));
 		}
