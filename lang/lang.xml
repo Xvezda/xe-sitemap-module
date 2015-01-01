@@ -27,7 +27,7 @@
 	</item>
 	<item name="send_ping">
 		<value xml:lang="ko"><![CDATA[핑 보내기]]></value>
-		<value xml:lang="jp"><![CDATA[pingの送信]]></value>
+		<value xml:lang="jp"><![CDATA[ping送信]]></value>
 		<value xml:lang="en"><![CDATA[Send ping]]></value>
 	</item>
 	<item name="about_sitemap_submit">
@@ -62,7 +62,7 @@
 	</item>
 	<item name="metatag">
 		<value xml:lang="ko"><![CDATA[메타태그]]></value>
-		<value xml:lang="jp"><![CDATA[管理者ページの除外]]></value>
-		<value xml:lang="en"><![CDATA[Except admin pages]]></value>
+		<value xml:lang="jp"><![CDATA[メタタグ]]></value>
+		<value xml:lang="en"><![CDATA[Meta tag]]></value>
 	</item>
 </lang>
