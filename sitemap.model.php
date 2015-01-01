@@ -1,5 +1,5 @@
 <?php
-/* Copyright (C) Xvezda <http://xvezda.blog.me> */
+/* Copyright (C) Xvezda <http://xvezda.com> */
 
 /**
  * @class  SitemapModel
