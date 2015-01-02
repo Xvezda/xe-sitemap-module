@@ -94,6 +94,10 @@ class sitemapAdminController extends sitemap
 		$config_vars = Context::getRequestVars();
 		$robots_buff[] = 'User-agent: *';
 
+		if($config_vars->disallow_all == 'Y')
+		{
+			$robots_buff[] = 'Disallow: /';
+		}
 		if($config_vars->only_shorten_url == 'Y')
 		{
 			$robots_buff[] = 'Disallow: /*?';
