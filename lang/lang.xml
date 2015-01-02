@@ -80,6 +80,11 @@
 		<value xml:lang="jp"><![CDATA[Robots.txtファイルを作成します。生成されたファイルは、ルートにアップロードする必要があります。 ex) example.com/robots.txt]]></value>
 		<value xml:lang="en"><![CDATA[Robots.txt]]></value>
 	</item>
+	<item name="disallow_all">
+		<value xml:lang="ko"><![CDATA[전체 차단]]></value>
+		<value xml:lang="jp"><![CDATA[全ブロック]]></value>
+		<value xml:lang="en"><![CDATA[Disallow all]]></value>
+	</item>
 	<item name="only_shorten_url">
 		<value xml:lang="ko"><![CDATA[짧은 주소만 허용]]></value>
 		<value xml:lang="jp"><![CDATA[短いアドレスのみを許可]]></value>
