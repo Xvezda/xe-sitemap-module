@@ -9,13 +9,24 @@
 	<section class="section">
 		<h1>{$lang->robots}</h1>
 		<div class="x_control-group">
+			<label class="x_control-label">{$lang->disallow_all}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="disallow_all" value="Y" id="disallow_all_yes" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="disallow_all" value="N" id="disallow_all_no" checked="checked" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
+		<div class="x_control-group">
 			<label class="x_control-label">{$lang->only_shorten_url}</label>
 			<div class="x_controls">
 				<label class="x_inline">
-					<input type="radio" name="only_shorten_url" value="Y" id="only_shorten_url_yes" checked="checked" /> {$lang->use}
+					<input type="radio" name="only_shorten_url" value="Y" id="only_shorten_url_yes" /> {$lang->use}
 				</label>
 				<label class="x_inline">
-					<input type="radio" name="only_shorten_url" value="N" id="only_shorten_url_no" /> {$lang->notuse}
+					<input type="radio" name="only_shorten_url" value="N" id="only_shorten_url_no" checked="checked" /> {$lang->notuse}
 				</label>
 			</div>
 		</div>
@@ -23,10 +34,10 @@
 			<label class="x_control-label">{$lang->except_images}</label>
 			<div class="x_controls">
 				<label class="x_inline">
-					<input type="radio" name="except_images" value="Y" id="except_images_yes" checked="checked" /> {$lang->use}
+					<input type="radio" name="except_images" value="Y" id="except_images_yes" /> {$lang->use}
 				</label>
 				<label class="x_inline">
-					<input type="radio" name="except_images" value="N" id="except_images_no" /> {$lang->notuse}
+					<input type="radio" name="except_images" value="N" id="except_images_no" checked="checked" /> {$lang->notuse}
 				</label>
 			</div>
 		</div>
@@ -34,10 +45,10 @@
 			<label class="x_control-label">{$lang->include_sitemap}</label>
 			<div class="x_controls">
 				<label class="x_inline">
-					<input type="radio" name="include_sitemap" value="Y" id="include_sitemap_yes" checked="checked" /> {$lang->use}
+					<input type="radio" name="include_sitemap" value="Y" id="include_sitemap_yes" /> {$lang->use}
 				</label>
 				<label class="x_inline">
-					<input type="radio" name="include_sitemap" value="N" id="include_sitemap_no" /> {$lang->notuse}
+					<input type="radio" name="include_sitemap" value="N" id="include_sitemap_no" checked="checked" /> {$lang->notuse}
 				</label>
 			</div>
 		</div>
