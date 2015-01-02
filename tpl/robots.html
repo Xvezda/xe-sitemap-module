@@ -1,0 +1,51 @@
+<include target="_header.html" />
+
+<form action="./" method="post" class="x_form-horizontal" style="margin-top:0">
+	<input type="hidden" name="act" value="procSitemapAdminDownloadRobots" />
+	<input type="hidden" name="module" value="admin" />
+	<input type="hidden" name="xe_validator_id" value="modules/sitemap/tpl/robots/1" />
+
+	<section class="section">
+		<h1>{$lang->robots}</h1>
+		<div class="x_alert x_alert-info">{$lang->about_robots}</div>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->only_shorten_url}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="only_shorten_url" value="Y" id="only_shorten_url_yes" checked="checked" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="only_shorten_url" value="N" id="only_shorten_url_no" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->except_images}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="except_images" value="Y" id="except_images_yes" checked="checked" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="except_images" value="N" id="except_images_no" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->include_sitemap}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="include_sitemap" value="Y" id="include_sitemap_yes" checked="checked" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="include_sitemap" value="N" id="include_sitemap_no" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<div class="x_control-label">{$lang->robots} {$lang->cmd_make}</div>
+			<div class="x_controls">
+				<button type="submit" class="x_btn x_btn-danger">{$lang->cmd_make}</button>
+			</div>
+		</div>
+	</section>
+</form>

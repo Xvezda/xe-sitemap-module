@@ -85,6 +85,37 @@ class sitemapAdminController extends sitemap
 
 		exit();
 	}
+
+	/**
+	 * Download robots.txt
+	 */
+	function procSitemapAdminDownloadRobots()
+	{
+		$config_vars = Context::getRequestVars();
+		$robots_buff[] = 'User-agent: *';
+
+		if($config_vars->only_shorten_url == 'Y')
+		{
+			$robots_buff[] = 'Disallow: /*?';
+		}
+		if($config_vars->except_images == 'Y')
+		{
+			$robots_buff[] = 'Disallow: /files/attach/images';
+		}
+		if($config_vars->include_sitemap == 'Y')
+		{
+			$robots_buff[] = 'Sitemap: '.getFullUrl('', 'module', 'sitemap', 'act', 'sitemap');
+		}
+
+		Context::close();
+
+		header('Content-disposition: attachment; filename=robots.txt');
+		header('Content-type: text/plain');
+
+		echo implode(PHP_EOL, $robots_buff);
+
+		exit();
+	}
 }
 
 /* End of file sitemap.admin.controller.php */

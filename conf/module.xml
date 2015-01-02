@@ -4,9 +4,11 @@
 	<permissions />
 	<actions>
 		<action name="dispSitemapAdminIndex" type="view" menu_name="sitemap" menu_index="true" admin_index="true" />
+		<action name="dispSitemapAdminRobots" type="view" />
 		<action name="procSitemapAdminInsertConfig" type="controller" />
 		<action name="procSitemapAdminPingSitemap" type="controller" />
 		<action name="procSitemapAdminDownloadSitemap" type="controller" />
+		<action name="procSitemapAdminDownloadRobots" type="controller" />
 		<action name="sitemap" type="view" />
 	</actions>
 	<menus>

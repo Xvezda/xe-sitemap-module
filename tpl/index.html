@@ -1,14 +1,5 @@
-<load target="css/sitemap.css" />
-<load target="js/sitemap.js" />
-<load target="../../module/tpl/js/module_list.js" />
+<include target="_header.html" />
 
-<div class="x_page-header">
-	<h1>{$lang->sitemap}</h1>
-</div>
-
-<div cond="$XE_VALIDATOR_MESSAGE && $XE_VALIDATOR_ID == 'modules/sitemap/tpl/index/1'" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
-<p>{$XE_VALIDATOR_MESSAGE}</p>
-</div>
 <form action="./" method="post" class="x_form-horizontal" style="margin-top:0">
 	<input type="hidden" name="act" value="procSitemapAdminInsertConfig" />
 	<input type="hidden" name="module" value="admin" />
@@ -119,4 +110,4 @@
 			<button class="x_btn x_btn-primary" type="submit">{$lang->cmd_registration}</button>
 		</div>
 	</section>
-</form>
+	</form>

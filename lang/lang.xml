@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <lang>
+	<item name="basic_setting">
+		<value xml:lang="ko"><![CDATA[기본 설정]]></value>
+		<value xml:lang="jp"><![CDATA[デフォルトの設定]]></value>
+		<value xml:lang="en"><![CDATA[Basic setting]]></value>
+	</item>
 	<item name="sitemap">
 		<value xml:lang="ko"><![CDATA[사이트맵]]></value>
 		<value xml:lang="jp"><![CDATA[サイトマップ]]></value>
@@ -64,5 +69,30 @@
 		<value xml:lang="ko"><![CDATA[메타태그]]></value>
 		<value xml:lang="jp"><![CDATA[メタタグ]]></value>
 		<value xml:lang="en"><![CDATA[Meta tag]]></value>
+	</item>
+	<item name="robots">
+		<value xml:lang="ko"><![CDATA[Robots.txt]]></value>
+		<value xml:lang="jp"><![CDATA[Robots.txt]]></value>
+		<value xml:lang="en"><![CDATA[Robots.txt]]></value>
+	</item>
+	<item name="about_robots">
+		<value xml:lang="ko"><![CDATA[Robots.txt 파일을 생성합니다. 생성된 파일은 루트에 업로드해야 합니다. ex) example.com/robots.txt]]></value>
+		<value xml:lang="jp"><![CDATA[Robots.txtファイルを作成します。生成されたファイルは、ルートにアップロードする必要があります。 ex) example.com/robots.txt]]></value>
+		<value xml:lang="en"><![CDATA[Robots.txt]]></value>
+	</item>
+	<item name="only_shorten_url">
+		<value xml:lang="ko"><![CDATA[짧은 주소만 허용]]></value>
+		<value xml:lang="jp"><![CDATA[短いアドレスのみを許可]]></value>
+		<value xml:lang="en"><![CDATA[Only accept shorten url]]></value>
+	</item>
+	<item name="except_images">
+		<value xml:lang="ko"><![CDATA[이미지 제외]]></value>
+		<value xml:lang="jp"><![CDATA[画像を除く]]></value>
+		<value xml:lang="en"><![CDATA[Except images]]></value>
+	</item>
+	<item name="include_sitemap">
+		<value xml:lang="ko"><![CDATA[사이트맵 포함]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップを含む]]></value>
+		<value xml:lang="en"><![CDATA[Include sitemap]]></value>
 	</item>
 </lang>
