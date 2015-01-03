@@ -1,5 +1,5 @@
 <include target="_header.html" />
-
+<div class="x_alert x_alert-danger">{$lang->sitemap_info}</div>
 <form action="./" method="post" class="x_form-horizontal" style="margin-top:0">
 	<input type="hidden" name="act" value="procSitemapAdminInsertConfig" />
 	<input type="hidden" name="module" value="admin" />
@@ -11,7 +11,7 @@
 			<div class="x_control-label">{$lang->url}</div>
 			<div class="x_controls">
 				<p style="padding-top:5px">
-					<a href="{getFullUrl('', 'module', 'sitemap', 'act', 'sitemap')}" target="_blank">{getFullUrl('', 'module', 'sitemap', 'act', 'sitemap')}</a>
+					<a href="{getFullUrl('')}sitemap.xml" target="_blank">{getFullUrl('')}sitemap.xml</a>
 				</p>
 			</div>
 		</div>
