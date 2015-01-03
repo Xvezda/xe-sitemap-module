@@ -50,7 +50,7 @@ class sitemapAdminController extends sitemap
 
 		foreach($pingUrl as $url)
 		{
-			FileHandler::getRemoteResource($url.getFullUrl('', 'module', 'sitemap', 'act', 'sitemap'));
+			FileHandler::getRemoteResource($url.getFullUrl('').'sitemap.xml');
 		}
 		$this->setMessage('success_registed');
 	}
