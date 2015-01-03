@@ -31,16 +31,6 @@ class sitemapAdminView extends sitemap
 
 		Context::set('metatag_list', array('all', 'noindex', 'nofollow', 'none', 'noarchive', 'nosnippet'));
 	}
-
-	/**
-	 * Display index admin page
-	 * @return void|object
-	 */
-	function dispSitemapAdminRobots()
-	{
-	
-	}
-
 }
 
 /* End of file sitemap.admin.view.php */
