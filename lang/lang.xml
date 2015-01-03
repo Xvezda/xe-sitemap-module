@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <lang>
 	<item name="sitemap_info">
-		<value xml:lang="ko"><![CDATA[사이트맵을 사용하시려면 .htaccess에 다음을 추가하셔야 합니다.<br /><b>RewriteRule ^sitemap\.xml ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
-		<value xml:lang="jp"><![CDATA[サイトマップを使用するには、.htaccessに以下を追加する必要があります。<br /><b>RewriteRule ^sitemap\.xml ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
-		<value xml:lang="en"><![CDATA[In order to use the sitemap, you need to add the following to .htaccess.<br /><b>RewriteRule ^sitemap\.xml ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
+		<value xml:lang="ko"><![CDATA[사이트맵을 사용하시려면 .htaccess에 다음을 추가하셔야 합니다.<br /><b>RewriteRule ^sitemap\.xml$ ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップを使用するには、.htaccessに以下を追加する必要があります。<br /><b>RewriteRule ^sitemap\.xml$ ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
+		<value xml:lang="en"><![CDATA[In order to use the sitemap, you need to add the following to .htaccess.<br /><b>RewriteRule ^sitemap\.xml$ ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
 	</item>
 	<item name="sitemap">
 		<value xml:lang="ko"><![CDATA[사이트맵]]></value>
