@@ -6,7 +6,7 @@
 	<description xml:lang="ko">사이트맵 생성과 검색 색인을 관리합니다.</description>
 	<description xml:lang="jp">サイトマップの作成と検索インデックスを管理します。</description>
 	<description xml:lang="en">Manage the creation of sitemap and searching index.</description>
-	<version>1.0</version>
+	<version>1.1</version>
 	<date>2014-11-21</date>
 	<author email_address="xvezda@naver.com" link="http://xvezda.com">
 		<name xml:lang="ko">즈베즈다</name>

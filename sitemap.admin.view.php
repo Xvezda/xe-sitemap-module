@@ -44,6 +44,8 @@ class sitemapAdminView extends sitemap
 				$htaccess_flag = true;
 			}
 		}
+		fclose($fp);
+
 		Context::set('htaccess_flag', $htaccess_flag);
 	}
 }
