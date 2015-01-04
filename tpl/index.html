@@ -1,5 +1,7 @@
 <include target="_header.html" />
-<div class="x_alert x_alert-danger">{$lang->sitemap_info}</div>
+
+<div class="x_alert x_alert-danger" cond="!$htaccess_flag">{$lang->sitemap_info}</div>
+
 <form action="./" method="post" class="x_form-horizontal" style="margin-top:0">
 	<input type="hidden" name="act" value="procSitemapAdminInsertConfig" />
 	<input type="hidden" name="module" value="admin" />

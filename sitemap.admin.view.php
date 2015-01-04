@@ -30,6 +30,20 @@ class sitemapAdminView extends sitemap
 		Context::set('sitemap_config', $oSitemapModel->getConfig());
 
 		Context::set('metatag_list', array('all', 'noindex', 'nofollow', 'none', 'noarchive', 'nosnippet'));
+
+		$htaccess_flag = false;
+
+		// read .htaccess
+		$fp = fopen(_XE_PATH_.'.htaccess', 'r');
+		while(!feof($fp))
+		{
+			$ht_buff = fgets($fp);
+			if(strpos($ht_buff, 'RewriteRule ^sitemap\.xml$ ./index.php?module=sitemap&act=sitemap [L]') !== FALSE)
+			{
+				$htaccess_flag = true;
+			}
+		}
+		Context::set('htaccess_flag', $htaccess_flag);
 	}
 }
 
