@@ -31,8 +31,9 @@ class sitemapAdminView extends sitemap
 
 		Context::set('metatag_list', array('all', 'noindex', 'nofollow', 'none', 'noarchive', 'nosnippet'));
 
+		$ht_buff = '';
 		$htaccess_flag = false;
-
+		
 		// read .htaccess
 		$fp = fopen(_XE_PATH_.'.htaccess', 'r');
 		while(!feof($fp))
