@@ -28,6 +28,11 @@ class sitemapModel extends sitemap
 			$sitemap_config->use_sitemap = 'Y';
 		}
 
+		if(!$sitemap_config->sitemap_extention)
+		{
+			$sitemap_config->sitemap_extention = 'general';
+		}
+
 		if(!$sitemap_config->except_module)
 		{
 			$sitemap_config->except_module = '';

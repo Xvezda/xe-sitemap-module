@@ -29,6 +29,15 @@
 			</div>
 		</div>
 		<div class="x_control-group">
+			<label for="sitemap_extention" class="x_control-label">{$lang->sitemap_extention}</label>
+			<div class="x_controls">
+				<select name="sitemap_extention" id="sitemap_extention">
+					<option value="general" selected="selected"|cond="$sitemap_config->sitemap_extention == 'general'">{$lang->general}</option>
+					<option value="image" selected="selected"|cond="$sitemap_config->sitemap_extention == 'image'">{$lang->general} + {$lang->image}</option>
+				</select>
+			</div>
+		</div>
+		<div class="x_control-group">
 			<label class="x_control-label">{$lang->except_module}</label>
 			<div class="x_controls">
 				<input type="hidden" name="except_module_srl" id="except_module_srl" value="{$sitemap_config->except_module_srl}" />

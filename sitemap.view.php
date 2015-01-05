@@ -17,6 +17,8 @@ class sitemapView extends sitemap
 		$oSitemapModel = getModel('sitemap');
 		$config = $oSitemapModel->getConfig();
 
+		Context::set('config', $config);
+
 		if($config->use_sitemap == 'N')
 		{
 			exit('Not in use');
@@ -29,7 +31,17 @@ class sitemapView extends sitemap
 
 		$result = executeQuery('sitemap.getDocumentSrlByStatus', $args);
 
-		Context::set('oDocument', $result->data);
+		$document_srls = array();
+
+		foreach($result->data as $key => $val)
+		{
+			$document_srls[] = $val->document_srl;
+		}
+
+		$oDocumentModel = getModel('document');
+		$oDocuments = $oDocumentModel->getDocuments($document_srls);
+
+		Context::set('oDocuments', $oDocuments);
 
 		// XML
 		Context::setResponseMethod('XMLRPC');

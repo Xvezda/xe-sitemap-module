@@ -1,9 +1,18 @@
 {'<?xml version="1.0" encoding="UTF-8" ?>'}
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"<!--@if($config->sitemap_extention == 'image')--> xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"<!--@end-->>
 	<url>
 		<loc>{getFullUrl('')}</loc>
 	</url>
-	<url loop="$oDocument=>$key,$val">
-		<loc>{getFullUrl('', 'document_srl', $val->document_srl)}</loc>
+	<url loop="$oDocuments=>$oDocument">
+		<loc>{$oDocument->getPermanentUrl()}</loc>
+		<!--@if($oDocument->get('uploaded_count') && $config->sitemap_extention == 'image')-->
+			<!--@foreach($oDocument->getUploadedFiles() as $file)-->
+			<!--@if($file->direct_download == 'Y' && preg_match('/\.(jpg|jpeg|gif|png)$/i',$file->uploaded_filename))-->
+			<image:image>
+				<image:loc>{getFullUrl('')}{str_replace('./', '', $file->uploaded_filename)}</image:loc>
+			</image:image>
+			<!--@end-->
+			<!--@end-->
+		<!--@end-->
 	</url>
 </urlset>
