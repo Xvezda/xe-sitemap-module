@@ -39,7 +39,7 @@ class sitemapAdminView extends sitemap
 		while(!feof($fp))
 		{
 			$ht_buff = fgets($fp);
-			if(strpos($ht_buff, './index.php?module=sitemap&act=sitemap [L]') !== FALSE)
+			if(strpos($ht_buff, './index.php?module=sitemap&act=sitemap') !== FALSE)
 			{
 				$htaccess_flag = true;
 			}
