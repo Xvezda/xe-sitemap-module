@@ -12,18 +12,18 @@
 	</item>
 	<item name="sitemap_extention">
 		<value xml:lang="ko"><![CDATA[사이트맵 확장자]]></value>
-		<value xml:lang="jp"><![CDATA[サイトマップ]]></value>
-		<value xml:lang="en"><![CDATA[Sitemap]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップ拡張子]]></value>
+		<value xml:lang="en"><![CDATA[Sitemap extention]]></value>
 	</item>
 	<item name="general">
 		<value xml:lang="ko"><![CDATA[일반]]></value>
-		<value xml:lang="jp"><![CDATA[サイトマップ]]></value>
-		<value xml:lang="en"><![CDATA[Sitemap]]></value>
+		<value xml:lang="jp"><![CDATA[一般]]></value>
+		<value xml:lang="en"><![CDATA[General]]></value>
 	</item>
 	<item name="image">
 		<value xml:lang="ko"><![CDATA[이미지]]></value>
-		<value xml:lang="jp"><![CDATA[サイトマップ]]></value>
-		<value xml:lang="en"><![CDATA[Sitemap]]></value>
+		<value xml:lang="jp"><![CDATA[イメージ]]></value>
+		<value xml:lang="en"><![CDATA[Image]]></value>
 	</item>
 	<item name="search_index">
 		<value xml:lang="ko"><![CDATA[검색 색인]]></value>
