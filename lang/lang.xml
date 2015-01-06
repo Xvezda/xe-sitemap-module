@@ -10,7 +10,7 @@
 		<value xml:lang="jp"><![CDATA[サイトマップ]]></value>
 		<value xml:lang="en"><![CDATA[Sitemap]]></value>
 	</item>
-	<item name="sitemap_extention">
+	<item name="sitemap_extension">
 		<value xml:lang="ko"><![CDATA[사이트맵 확장자]]></value>
 		<value xml:lang="jp"><![CDATA[サイトマップ拡張子]]></value>
 		<value xml:lang="en"><![CDATA[Sitemap extention]]></value>

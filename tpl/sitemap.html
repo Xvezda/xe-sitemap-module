@@ -1,5 +1,5 @@
 {'<?xml version="1.0" encoding="UTF-8" ?>'}
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"<!--@if($config->sitemap_extention > 0)--> xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"<!--@end--><!--@if($config->sitemap_extention > 1)--> xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"<!--@end-->>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"<!--@if($config->sitemap_extension > 0)--> xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"<!--@end--><!--@if($config->sitemap_extension > 1)--> xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"<!--@end-->>
 	<url>
 		<loc>{getFullUrl('')}</loc>
 	</url>
@@ -8,12 +8,12 @@
 		<!--@if($oDocument->get('uploaded_count'))-->
 			<!--@foreach($oDocument->getUploadedFiles() as $file)-->
 			<!--@if($file->direct_download == 'Y')-->
-			<!--@if(preg_match('/\.(jpg|jpeg|gif|png)$/i',$file->uploaded_filename) && $config->sitemap_extention > 0)-->
+			<!--@if(preg_match('/\.(jpg|jpeg|gif|png)$/i',$file->uploaded_filename) && $config->sitemap_extension > 0)-->
 			<image:image>
 				<image:loc>{getFullUrl('')}{str_replace('./', '', $file->uploaded_filename)}</image:loc>
 			</image:image>
 			<!--@end-->
-			<!--@if(preg_match('/\.(swf|flv|wmv|avi|mpg|mpeg|asx|asf)$/i',$file->uploaded_filename) && $config->sitemap_extention > 1)-->
+			<!--@if(preg_match('/\.(swf|flv|wmv|avi|mpg|mpeg|asx|asf)$/i',$file->uploaded_filename) && $config->sitemap_extension > 1)-->
 			<video:video>
 				<video:content_loc>{getFullUrl('')}{str_replace('./', '', $file->uploaded_filename)}</video:content_loc>
 				<!--@if($oDocument->thumbnailExists())-->
