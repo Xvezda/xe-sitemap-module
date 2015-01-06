@@ -30,7 +30,7 @@ class sitemapModel extends sitemap
 
 		if(!$sitemap_config->sitemap_extention)
 		{
-			$sitemap_config->sitemap_extention = 'general';
+			$sitemap_config->sitemap_extention = 0;
 		}
 
 		if(!$sitemap_config->except_module)

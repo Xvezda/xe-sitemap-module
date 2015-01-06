@@ -32,8 +32,9 @@
 			<label for="sitemap_extention" class="x_control-label">{$lang->sitemap_extention}</label>
 			<div class="x_controls">
 				<select name="sitemap_extention" id="sitemap_extention">
-					<option value="general" selected="selected"|cond="$sitemap_config->sitemap_extention == 'general'">{$lang->general}</option>
-					<option value="image" selected="selected"|cond="$sitemap_config->sitemap_extention == 'image'">{$lang->general} + {$lang->image}</option>
+					<option value="0" selected="selected"|cond="$sitemap_config->sitemap_extention == 0">{$lang->general}</option>
+					<option value="1" selected="selected"|cond="$sitemap_config->sitemap_extention == 1">{$lang->general} + {$lang->image}</option>
+					<option value="2" selected="selected"|cond="$sitemap_config->sitemap_extention == 2">{$lang->general} + {$lang->image} + {$lang->video}</option>
 				</select>
 			</div>
 		</div>
@@ -52,7 +53,7 @@
 		<div class="x_control-group">
 			<label class="x_control-label" for="sitemap_document_count">{$lang->sitemap_document_count}</label>
 			<div class="x_controls">
-				<input type="number" min="10" max="50000" name="sitemap_document_count" value="{$sitemap_config->sitemap_document_count}" id="sitemap_document_count" />
+				<input type="number" min="5" max="50000" name="sitemap_document_count" value="{$sitemap_config->sitemap_document_count}" id="sitemap_document_count" />
 				<p class="x_help-inline">{$lang->about_sitemap_document_count}</p>
 			</div>
 		</div>

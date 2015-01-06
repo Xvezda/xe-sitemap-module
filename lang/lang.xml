@@ -25,6 +25,11 @@
 		<value xml:lang="jp"><![CDATA[イメージ]]></value>
 		<value xml:lang="en"><![CDATA[Image]]></value>
 	</item>
+	<item name="video">
+		<value xml:lang="ko"><![CDATA[비디오]]></value>
+		<value xml:lang="jp"><![CDATA[ビデオ]]></value>
+		<value xml:lang="en"><![CDATA[Video]]></value>
+	</item>
 	<item name="search_index">
 		<value xml:lang="ko"><![CDATA[검색 색인]]></value>
 		<value xml:lang="jp"><![CDATA[検索インデックス]]></value>
