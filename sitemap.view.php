@@ -24,12 +24,23 @@ class sitemapView extends sitemap
 			exit('Not in use');
 		}
 
+		$template = 'sitemapindex';
+		$page = Context::get('page');
+
+		if($page)
+		{
+			$template = 'sitemap';
+		}
+
 		$args = new stdClass();
 		$args->status = 'PUBLIC';
 		$args->except_module_srl = $config->except_module_srl;
 		$args->list_count = $config->sitemap_document_count;
+		$args->page = $page;
 
 		$result = executeQuery('sitemap.getDocumentSrlByStatus', $args);
+
+		Context::set('result', $result);
 
 		$document_srls = array();
 
@@ -50,7 +61,7 @@ class sitemapView extends sitemap
 
 		$oTemplate = new TemplateHandler();
 
-		$content = $oTemplate->compile($path, 'sitemap');
+		$content = $oTemplate->compile($path, $template);
 		Context::set('content', $content);
 
 		// Set the template file

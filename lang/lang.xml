@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <lang>
 	<item name="sitemap_info">
-		<value xml:lang="ko"><![CDATA[사이트맵을 사용하시려면 .htaccess에 다음을 추가하셔야 합니다.<br /><b>RewriteRule ^sitemap\.xml$ ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
-		<value xml:lang="jp"><![CDATA[サイトマップを使用するには、.htaccessに以下を追加する必要があります。<br /><b>RewriteRule ^sitemap\.xml$ ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
-		<value xml:lang="en"><![CDATA[In order to use the sitemap, you need to add the following to .htaccess.<br /><b>RewriteRule ^sitemap\.xml$ ./index.php?module=sitemap&act=sitemap [L]</b>]]></value>
+		<value xml:lang="ko"><![CDATA[사이트맵을 사용하시려면 .htaccess에 다음을 추가하셔야 합니다.<br /><b>RewriteRule ^sitemap([0-9]*)\.xml$ ./index.php?module=sitemap&act=sitemap&page=$1 [L]</b>]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップを使用するには、.htaccessに以下を追加する必要があります。<br /><b>RewriteRule ^sitemap([0-9]*)\.xml$ ./index.php?module=sitemap&act=sitemap&page=$1 [L]</b>]]></value>
+		<value xml:lang="en"><![CDATA[In order to use the sitemap, you need to add the following to .htaccess.<br /><b>RewriteRule ^sitemap([0-9]*)\.xml$ ./index.php?module=sitemap&act=sitemap&page=$1 [L]</b>]]></value>
 	</item>
 	<item name="sitemap">
 		<value xml:lang="ko"><![CDATA[사이트맵]]></value>
@@ -46,9 +46,9 @@
 		<value xml:lang="en"><![CDATA[Sitemap document count]]></value>
 	</item>
 	<item name="about_sitemap_document_count">
-		<value xml:lang="ko"><![CDATA[사이트맵에 출력할 글의 수를 선택합니다.]]></value>
-		<value xml:lang="jp"><![CDATA[サイトマップに出力するスレッドの数を選択します。]]></value>
-		<value xml:lang="en"><![CDATA[Choose the number of threads to be output to the sitemap.]]></value>
+		<value xml:lang="ko"><![CDATA[하나의 사이트맵에 출력할 글의 수를 선택합니다.]]></value>
+		<value xml:lang="jp"><![CDATA[一つのサイトマップに出力するスレッドの数を選択します。]]></value>
+		<value xml:lang="en"><![CDATA[Choose the number of threads to be output to the each sitemap.]]></value>
 	</item>
 	<item name="send_ping">
 		<value xml:lang="ko"><![CDATA[핑 보내기]]></value>

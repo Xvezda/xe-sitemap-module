@@ -40,7 +40,7 @@ class sitemapModel extends sitemap
 
 		if(!$sitemap_config->sitemap_document_count)
 		{
-			$sitemap_config->sitemap_document_count = 25;
+			$sitemap_config->sitemap_document_count = 50;
 		}
 
 		if(!$sitemap_config->except_deleted)
