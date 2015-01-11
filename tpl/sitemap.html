@@ -17,7 +17,7 @@
 				<video:thumbnail_loc>{$oDocument->getThumbnail()}</video:thumbnail_loc>
 				<!--@end-->
 				<video:title>{$oDocument->getTitleText()}</video:title>
-				<video:description>{$oDocument->getContentText(200)}</video:description>
+				<video:description>{str_replace('&nbsp;', ' ', $oDocument->getContentText(200))}</video:description>
 			</video:video>
 			<!--@end-->
 			<!--@end-->
