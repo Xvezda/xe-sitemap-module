@@ -10,6 +10,26 @@
 		<value xml:lang="jp"><![CDATA[サイトマップ]]></value>
 		<value xml:lang="en"><![CDATA[Sitemap]]></value>
 	</item>
+	<item name="use_mid_exception">
+		<value xml:lang="ko"><![CDATA[짧은 주소 사용]]></value>
+		<value xml:lang="jp"><![CDATA[短いURLを使用]]></value>
+		<value xml:lang="en"><![CDATA[Use short URL]]></value>
+	</item>
+	<item name="about_use_mid_exception">
+		<value xml:lang="ko"><![CDATA[mid 값을 제외한 default permanent URL값을 사용합니다.]]></value>
+		<value xml:lang="jp"><![CDATA[midの値を除いたdefault permanent URL値を使用します。]]></value>
+		<value xml:lang="en"><![CDATA[Use the default permanent URL values except for the mid value.]]></value>
+	</item>
+	<item name="use_lastmod">
+		<value xml:lang="ko"><![CDATA[마지막 수정 시간 사용]]></value>
+		<value xml:lang="jp"><![CDATA[短いURLを使用]]></value>
+		<value xml:lang="en"><![CDATA[Use short URL]]></value>
+	</item>
+	<item name="about_use_lastmod">
+		<value xml:lang="ko"><![CDATA[사이트맵에 lastmod tag를 추가합니다.]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップにlastmod tagを追加します。]]></value>
+		<value xml:lang="en"><![CDATA[Add the lastmod tag in your Sitemap.]]></value>
+	</item>
 	<item name="sitemap_extension">
 		<value xml:lang="ko"><![CDATA[사이트맵 확장자]]></value>
 		<value xml:lang="jp"><![CDATA[サイトマップ拡張子]]></value>
@@ -67,6 +87,11 @@
 	</item>
 	<item name="about_sitemap_download">
 		<value xml:lang="ko"><![CDATA[사이트맵을 텍스트 파일로 다운로드 합니다.]]></value>
+		<value xml:lang="jp"><![CDATA[サイトマップをテキストファイルとしてダウンロードします。]]></value>
+		<value xml:lang="en"><![CDATA[Download sitemap as text file.]]></value>
+	</item>
+	<item name="about_xml_sitemap_download">
+		<value xml:lang="ko"><![CDATA[제출용 사이트맵을 xml로 다운로드 합니다.]]></value>
 		<value xml:lang="jp"><![CDATA[サイトマップをテキストファイルとしてダウンロードします。]]></value>
 		<value xml:lang="en"><![CDATA[Download sitemap as text file.]]></value>
 	</item>

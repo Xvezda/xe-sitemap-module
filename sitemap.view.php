@@ -31,6 +31,16 @@ class sitemapView extends sitemap
 		{
 			$template = 'sitemap';
 		}
+		
+		$dl = Context::get('dl');
+		$logged_info = Context::get('logged_info');
+		
+		if($dl == 'true' && $logged_info->is_admin == 'Y')
+		{
+			//download as xml
+			header('Content-disposition: attachment; filename=sitemap'.$page.'.xml');
+			header('Content-type: text/xml');
+		}
 
 		$args = new stdClass();
 		$args->status = 'PUBLIC';

@@ -27,6 +27,16 @@ class sitemapModel extends sitemap
 		{
 			$sitemap_config->use_sitemap = 'Y';
 		}
+		
+		if(!$sitemap_config->use_mid_exception)
+		{
+			$sitemap_config->use_mid_exception = 'Y';
+		}
+		
+		if(!$sitemap_config->use_lastmod)
+		{
+			$sitemap_config->use_lastmod = 'Y';
+		}
 
 		if(!$sitemap_config->sitemap_extension)
 		{
@@ -43,6 +53,11 @@ class sitemapModel extends sitemap
 			$sitemap_config->sitemap_document_count = 100;
 		}
 
+		if(!$sitemap_config->use_search_index)
+		{
+			$sitemap_config->use_search_index = 'N';
+		}
+		
 		if(!$sitemap_config->except_deleted)
 		{
 			$sitemap_config->except_deleted = 'Y';

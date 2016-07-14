@@ -47,6 +47,19 @@ class sitemapAdminView extends sitemap
 		fclose($fp);
 
 		Context::set('htaccess_flag', $htaccess_flag);
+		
+		//set xml download options
+		$page = 0;
+		
+		$args = new stdClass();
+		$args->status = 'PUBLIC';
+		$args->except_module_srl = $config->except_module_srl;
+		$args->list_count = $config->sitemap_document_count;
+		$args->page = $page;
+		
+		$result = executeQuery('sitemap.getDocumentSrlByStatus', $args);
+		
+		Context::set('result', $result);
 	}
 }
 

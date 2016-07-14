@@ -29,6 +29,30 @@
 			</div>
 		</div>
 		<div class="x_control-group">
+			<label for="use_mid_exception" class="x_control-label">{$lang->use_mid_exception}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="use_mid_exception" value="Y" id="use_mid_exception_yes" checked="checked"|cond="!$sitemap_config->use_mid_exception || $sitemap_config->use_mid_exception == 'Y'" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="use_mid_exception" value="N" id="use_mid_exception_no" checked="checked"|cond="$sitemap_config->use_mid_exception == 'N'" /> {$lang->notuse}
+				</label>
+				<p class="x_help-inline">{$lang->about_use_mid_exception}</p>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<label for="use_lastmod" class="x_control-label">{$lang->use_lastmod}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="use_lastmod" value="Y" id="use_lastmod" checked="checked"|cond="!$sitemap_config->use_lastmod || $sitemap_config->use_lastmod == 'Y'" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="use_lastmod" value="N" id="use_lastmod_no" checked="checked"|cond="$sitemap_config->use_lastmod == 'N'" /> {$lang->notuse}
+				</label>
+				<p class="x_help-inline">{$lang->about_use_lastmod}</p>
+			</div>
+		</div>
+		<div class="x_control-group">
 			<label for="sitemap_extension" class="x_control-label">{$lang->sitemap_extension}</label>
 			<div class="x_controls">
 				<select name="sitemap_extension" id="sitemap_extension">
@@ -67,8 +91,17 @@
 		<div class="x_control-group">
 			<div class="x_control-label">{$lang->download}</div>
 			<div class="x_controls">
-				<a href="{getUrl('', 'module', 'admin', 'act', 'procSitemapAdminDownloadSitemap')}" class="x_btn x_btn-warning">{$lang->download}</a>
+				<select name="xml_sitemap_page" id="xml_sitemap_page">
+					<option loop="$i = 1; $i <= $result->total_page; $i++"  value="{$i}" selected="selected"|cond="$i == 1">Page {$i}</option>
+				</select>
+				<a href="{getUrl('', 'module', 'sitemap', 'act', 'sitemap', 'page', '1', 'dl', 'true')}" class="x_btn x_btn-danger" id="dl">.xml {$lang->download}</a>
+				<p class="x_help-inline">{$lang->about_xml_sitemap_download}</p>
+				<!-- 
+				/* please delete this caption, if you want to use text format download */
+				<p></p>
+				<a href="{getUrl('', 'module', 'admin', 'act', 'procSitemapAdminDownloadSitemap')}" class="x_btn x_btn-warning">.txt {$lang->download}</a>
 				<p class="x_help-inline">{$lang->about_sitemap_download}</p>
+				-->
 			</div>
 		</div>
 		<div class="btnArea">
@@ -77,6 +110,17 @@
 	</section>
 	<section class="section">
 		<h1>{$lang->search_index} {$lang->cmd_management}</h1>
+		<div class="x_control-group">
+			<label class="x_control-label">{$lang->search_index}</label>
+			<div class="x_controls">
+				<label class="x_inline">
+					<input type="radio" name="use_search_index" value="Y" id="use_search_index_yes" checked="checked"|cond="$sitemap_config->use_search_index == 'Y'" /> {$lang->use}
+				</label>
+				<label class="x_inline">
+					<input type="radio" name="use_search_index" value="N" id="use_search_index_no" checked="checked"|cond="!$sitemap_config->use_search_index || $sitemap_config->use_search_index == 'N'" /> {$lang->notuse}
+				</label>
+			</div>
+		</div>
 		<div class="x_control-group">
 			<label class="x_control-label">{$lang->except_deleted}</label>
 			<div class="x_controls">

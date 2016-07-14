@@ -19,6 +19,11 @@ class sitemapController extends sitemap
 		$config = $oSitemapModel->getConfig();
 
 		$document_srl = $_REQUEST['document_srl'];
+		
+		if($config->use_search_index == 'N')
+		{
+			return new Object();
+		}
 
 		if($document_srl)
 		{
